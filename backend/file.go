@@ -40,7 +40,7 @@ func InsertPresensi(long float64, lat float64, lokasi string, phonenumber string
 	presensi.Datetime = primitive.NewDateTimeFromTime(time.Now().UTC())
 	presensi.Checkin = checkin
 	presensi.Biodata = biodata
-	return InsertOneDoc("tes_db", "presensi", presensi)
+	return InsertOneDoc("be_db", "presensi", presensi)
 }
 
 func GetKaryawanFromPhoneNumber(phone_number string) (staf Presensi) {
