@@ -1,4 +1,4 @@
-package inituhmodul
+package namapackage
 
 import (
 	"fmt"
@@ -9,11 +9,11 @@ func TestInsertPresensi(t *testing.T) {
 	long := 98.345345
 	lat := 123.561651
 	lokasi := "Rumah"
-	phonenumber := "68122221814"
+	phonenumber := "682119049986"
 	checkin := "masuk"
 	biodata := Karyawan{
 		Nama:         "Drake",
-		Phone_number: "628456456211",
+		Phone_number: "682119049986",
 		Jabatan:      "Rakyat Biasa",
 	}
 	hasil := InsertPresensi(long, lat, lokasi, phonenumber, checkin, biodata)
