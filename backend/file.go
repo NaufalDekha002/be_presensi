@@ -44,7 +44,7 @@ func InsertPresensi(long float64, lat float64, lokasi string, phonenumber string
 }
 
 func GetKaryawanFromPhoneNumber(phone_number string) (staf Presensi) {
-	karyawan := MongoConnect("tes_db").Collection("presensi")
+	karyawan := MongoConnect("be_db").Collection("presensi")
 	filter := bson.M{"phone_number": phone_number}
 	err := karyawan.FindOne(context.TODO(), filter).Decode(&staf)
 	if err != nil {
