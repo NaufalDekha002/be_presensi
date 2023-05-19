@@ -14,7 +14,7 @@ import (
 
 var MongoString string = os.Getenv("MONGOSTRING")
 
-func MongoConnect(dbname string) (DBKU *mongo.Database) {
+func MongoConnect(dbname string) (db *mongo.Database) {
 	client, err := mongo.Connect(context.TODO(), options.Client().ApplyURI(MongoString))
 	if err != nil {
 		fmt.Printf("MongoConnect: %v\n", err)
