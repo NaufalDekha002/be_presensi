@@ -1,4 +1,4 @@
-package inipackage
+package inituhmodul
 
 import (
 	"context"
