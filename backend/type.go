@@ -1,4 +1,4 @@
-package inituhmodul
+package namapackage
 
 import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
