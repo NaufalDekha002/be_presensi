@@ -1,4 +1,4 @@
-package namapackage
+package inituhmodul
 
 import (
 	"fmt"
